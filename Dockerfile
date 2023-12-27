@@ -13,8 +13,9 @@ RUN wget \
     && rm -f Miniconda3-latest-Linux-x86_64.sh \
 RUN conda --version
 
-LABEL "repository"="https://github.com/fcakyon/conda-publish-action"
-LABEL "maintainer"="Fatih C Akyon"
+# https://github.com/fcakyon/conda-publish-action Fatih C Akyon
+LABEL "repository"="https://github.com/2003100127/conda-publish-action"
+LABEL "maintainer"="Jianfeng Sun"
 
 RUN apt-get update
 # to fix: import cv2 > ImportError: libGL.so.1: cannot open shared object file: No such file or directory
